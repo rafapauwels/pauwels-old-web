@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    background: url('../img/bg.svg') no-repeat right;
     background-color: #1E1E3A;
 }
 
