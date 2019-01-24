@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: #1E1E3A;
 }
@@ -16,4 +20,52 @@ nav {
 
 .nav-link:hover, .navbar-brand:hover {
     color: #fff;
+}
+
+.container-fluid {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 2%;
+    color: #fff;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.nav-item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.nav-item:hover {
+    font-weight: 500;
+}
+
+.content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.9rem;
+    line-height: 14.5rem;
+    font-weight: 500;
+    padding-top: 13.3%;
+}
+
+.subcontent {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.7rem;
+    line-height: 4.5rem;
+    font-weight: 300;
+    padding-top: 0.3%;
+}
+
+.navbar-toggle-text {
+    font-family: 'Montserrat', sans-serif;
+    color: ##1E1E3A;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 15%;
+    background: #fff;
 }
