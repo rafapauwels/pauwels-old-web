@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -7,44 +8,73 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/portfolio.css">
     
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar sticky-top navbar-expand-lg justify-content-between">
-                    <div>
-                        <a href="#" class="title navbar-brand">Rafael Pauwels</a>
-                    </div>
-                    
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggle-text">MENU</span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarToggler">
-                        <div class="nav ml-auto">
-                            <a href="#" class="nav-item nav-link">home</a>
-                            <a href="#" class="nav-item nav-link">work</a>
-                            <a href="#" class="nav-item nav-link">about</a>
-                            <a href="#" class="nav-item nav-link">contact</a>
-                        </div>
-                    </div>
-                </nav>
+    <nav class="navbar sticky-top navbar-expand-lg justify-content-between">
+        <div>
+            <a href="#" class="title navbar-brand">Rafael Pauwels</a>
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggle-text">MENU</span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <div class="nav ml-auto">
+                <a href="#home" class="nav-item nav-link">home</a>
+                <a href="#work" class="nav-item nav-link">work</a>
+                <a href="#" class="nav-item nav-link">about</a>
+                <a href="#" class="nav-item nav-link">contact</a>
             </div>
         </div>
-        
-        <div class="row content">
-            <div class="col-1"></div>
-            <div class="col-5">RAFAEL PAUWELS</div>
+    </nav>
+</head>
+<body>
+    <div class="container-fluid" id="fullpage">
+        <div class="section" data-anchor="home">
+            <div class="row">
+                <div class="col-6">            
+                    <div class="row content">
+                        <div class="col-1"></div>
+                        <div class="col-5">RAFAEL PAUWELS</div>
+                    </div>
+                    
+                    <div class="row subcontent">
+                        <div class="col-1"></div>
+                        <div class="col-5">web developer & designer</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <!--SVG here-->
+                </div>
+            </div>
         </div>
-        
-        <div class="row subcontent">
-            <div class="col-1"></div>
-            <div class="col-3">web developer & designer</div>
-        </div>
-        
+        <div class="section" data-anchor="work">
+                <div class="row">
+                    <div class="col-6">            
+                        <div class="row content">
+                            <div class="col-1"></div>
+                            <div class="col-5">RAFAEL PAUWELS</div>
+                        </div>
+                        
+                        <div class="row subcontent">
+                            <div class="col-1"></div>
+                            <div class="col-5">web developer & designer</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <!--SVG here-->
+                    </div>
+                </div>
+            </div>
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js"></script>
+
+    <script>
+        new fullpage('#fullpage', {
+            autoScrolling: true
+        })
+    </script>
 </body>
 </html>
