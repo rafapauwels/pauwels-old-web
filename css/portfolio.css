@@ -1,81 +1,85 @@
+.about .secondary-line, .contact .secondary-line, .work .secondary-line, .home .secondary-line, .nav-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.navbar-toggle-text, .about .primary-line, .contact .primary-line, .work .primary-line, .home .primary-line, .nav-item:hover, .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
 html {
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-top: 2%;
-    color: #fff;
-    font-size: 62.5%;
+  color: #fff;
+  font-size: 62.5%;
 }
 
 body {
-    background: url('../img/bg.svg') no-repeat right;
-    background-color: #1E1E3A;
+  background-color: #1E1E3A;
 }
 
-nav {
-    color: #fff;
+.navbar {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 2%;
 }
 
-.planet {
-    background: url('../img/planet.svg') no-repeat right;
-    background-size: 40%;
-    height: 100%;
-    background-size: contain;
-}
-
-.nav-link {
-    color: #fff;
-} 
-
-.navbar-brand {
-    color: #fff;
-}
-
-.nav-link:hover, .navbar-brand:hover {
-    color: #fff;
-}
-
-.container-fluid {
-    color: #fff;
+.nav-link, .navbar-brand, .nav-link:hover, .navbar-brand:hover, .container-fluid {
+  color: #fff;
 }
 
 .title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
-
 
 .nav-item {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
-.nav-item:hover {
-    font-weight: 500;
+.contact .primary-line, .work .primary-line, .home .primary-line {
+  font-size: 12.9rem;
+  line-height: 14.5rem;
 }
 
-.content {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12.9rem;
-    line-height: 14.5rem;
-    font-weight: 500;
-    padding-top: 25%;
+.about .secondary-line, .contact .secondary-line, .work .secondary-line, .home .secondary-line {
+  font-size: 4rem;
+  line-height: 4.5rem;
 }
 
-.subcontent {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    line-height: 4.5rem;
-    font-weight: 300;
-    padding-top: 0.3%;
+.home .primary-line {
+  padding-top: 10%;
+}
+.home .secondary-line {
+  padding-top: 1%;
+}
+
+.work .primary-line {
+  padding-top: 5%;
+}
+.work .secondary-line {
+  padding-top: 8%;
+}
+
+.contact .primary-line {
+  padding-top: 5%;
+}
+.contact .secondary-line {
+  padding-top: 8%;
+}
+
+.about .primary-line {
+  font-size: 5.5rem;
+  line-height: 6.1rem;
+  padding-top: 5%;
+}
+.about .secondary-line {
+  padding-top: 8%;
 }
 
 .navbar-toggle-text {
-    font-family: 'Montserrat', sans-serif;
-    color: ##1E1E3A;
-    font-size: 2rem;
-    font-weight: 500;
-    padding: 15%;
-    background: #fff;
+  color: #1E1E3A;
+  background: #fff;
+  font-size: 2rem;
+  padding: 15%;
 }
+
+/*# sourceMappingURL=portfolio.css.map */
