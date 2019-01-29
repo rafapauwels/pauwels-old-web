@@ -1,0 +1,95 @@
+body h2, body nav .navbar .navlinks {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+body h1, body nav .navbar #brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%;
+  color: #FFF;
+}
+
+body {
+  color: inherit;
+}
+body nav {
+  position: fixed;
+  z-index: 70;
+  width: 100vw;
+  color: #1E1E3A;
+  font-size: 2rem;
+}
+body nav .secundary-color {
+  color: #FFF;
+}
+body nav .navbar {
+  margin: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+}
+body nav .navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+body nav .navbar a:hover {
+  font-weight: 500;
+}
+body nav .navbar #brand {
+  color: inherit;
+}
+body nav .navbar .navlinks {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+body h1 {
+  font-size: 12.5rem;
+}
+body h2 {
+  font-size: 3.5rem;
+}
+body .wrapper {
+  margin: 5% 5%;
+  height: 85vh;
+}
+body .half {
+  width: 50%;
+}
+body #home h1 {
+  margin-bottom: 0;
+  line-height: 14.5rem;
+  margin-left: -10px;
+}
+body #home h2 {
+  margin-top: 0;
+}
+body #home .wrapper {
+  margin-top: 12%;
+  margin-left: 10%;
+}
+body #work {
+  color: #1E1E3A;
+}
+body #work .wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+body #work .wrapper h1 {
+  align-self: flex-end;
+  text-align: end;
+}
+body #work .wrapper a {
+  color: inherit;
+  text-decoration: none;
+}
+body #work .wrapper a:hover {
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=index.css.map */

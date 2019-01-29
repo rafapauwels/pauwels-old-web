@@ -1,92 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
-    <title>Rafael Pauwels</title>
-    
-    <nav class="navbar sticky-top navbar-expand-lg justify-content-between">
-        <div>
-            <a href="#" class="title navbar-brand">Rafael Pauwels</a>
-        </div>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggle-text">MENU</span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarToggler">
-            <div class="nav ml-auto">
-                <a href="#home" class="nav-item nav-link">home</a>
-                <a href="#work" class="nav-item nav-link">work</a>
-                <a href="#about" class="nav-item nav-link">about</a>
-                <a href="#contact" class="nav-item nav-link">contact</a>
-            </div>
-        </div>
-    </nav>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.5/jquery.pagepiling.css">
+  <link rel="stylesheet" href="./css/index.css">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.5/jquery.pagepiling.min.js"></script>
+  <script src="./js/index.js"></script>
+  
+  <title>Rafael Pauwels</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
 </head>
 <body>
-    <div class="container-fluid" id="fullpage">
-        <div class="section home" data-anchor="home">
-            <div class="row">
-                <div class="col-1 primary-line"></div>
-                <div class="col-5 primary-line">RAFAEL PAUWELS</div>
-            </div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-3 secondary-line">software engineer & web developer</div>
-            </div>
-        </div>
-        <div class="section work" data-anchor="work">
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-8 primary-line">Currently under development</div>
-            </div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-3 secondary-line">checkout my latest projects on github</div>
-            </div>
-        </div>
-        <div class="section about" data-anchor="about">
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-9 primary-line">
-                    <span>Hi - I'm Rafael. An experienced full stack developer, passionate about crafting beautiful, responsive and accessible websites.</span>
-                    <br><br><br>
-                    <span>I also love space.</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-3 secondary-line">checkout my linkedin</div>
-            </div>
-        </div>
-        <div class="section contact" data-anchor="contact">
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-9 primary-line">Get in touch</div>
-            </div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-6 secondary-line">
-                    <span>Hey - Let's talk more.</span>
-                    <br>
-                    <span>Send an email to rafapauwels at gmail or click here</span>
-                </div>
-            </div>
-        </div>
+  <nav id="menu">
+    <div class="navbar secundary-color" id="navbar">
+      <div data-menuanchor="home" id="brand"><a href="#home">Rafael Pauwels</a></div>
+      <div class="navlinks">
+        <div data-menuanchor="home"><a href="#home">home</a></div>
+        <div data-menuanchor="work"><a href="#work">work</a></div>
+        <div data-menuanchor="about"><a href="#about">about</a></div>
+        <div data-menuanchor="contact"><a href="#contact">contact</a></div>
+      </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js"></script>
+  </nav>
 
-    <script>
-        new fullpage('#fullpage', {
-            autoScrolling: true
-        })
-    </script>
+  <div id="page">
+    <div class="section" id="home">
+      <div class="wrapper">
+        <h1 class="half">RAFAEL PAUWELS</h1>
+        <h2>software engineer & <br> web developer</h2>
+      </div>
+    </div>
+    <div class="section" id="work">
+      <div class="wrapper">
+        <h1>Currently under development</h1>
+        <h2><a href="https://github.com/rafapauwels">checkout here my github</a></h2>
+      </div>
+    </div>
+    <div class="section" id="about">
+    </div>
+    <div class="section" id="contact">
+    </div>
+  </div>
+  
+  
 </body>
 </html>

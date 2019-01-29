@@ -1,0 +1,124 @@
+$primary-color: #1E1E3A;
+$secundary-color: #FFF;
+
+$side-margin: 5%;
+
+%light-montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+%medium-montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%;
+  color: $secundary-color;
+}
+
+body {
+  color: inherit;
+
+  nav {
+    position: fixed;
+    z-index: 70;
+    width: 100vw;
+    color: $primary-color;
+    font-size: 2rem;
+
+    .secundary-color {
+      color: $secundary-color;
+    }
+
+    .navbar {
+      margin: 2% $side-margin;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:hover {
+        font-weight: 500;
+      }
+      
+      #brand {
+        color: inherit;
+        @extend %medium-montserrat;
+      }
+
+      .navlinks {
+        @extend %light-montserrat;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row;
+      }
+    }
+  }
+  
+  h1 {
+    @extend %medium-montserrat;
+    font-size: 12.5rem;
+  }
+
+  h2 {
+    @extend %light-montserrat;    
+    font-size: 3.5rem;
+  }
+
+  .wrapper {
+    margin: 5% $side-margin;
+    height: 85vh;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  #home {
+    h1 {      
+      margin-bottom: 0;
+      line-height: 14.5rem;
+      margin-left: -10px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .wrapper {
+      margin-top: 12%;
+      margin-left: 10%;
+    }
+  }
+
+  #work {
+    color: $primary-color;
+    
+    .wrapper {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+
+      h1 {
+        align-self: flex-end;
+        text-align: end;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:hover {
+        font-weight: 500;
+      }
+      
+    }
+  }
+}
