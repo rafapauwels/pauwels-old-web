@@ -1,0 +1,53 @@
+$primary-color: #1E1E3A;
+
+section {
+  margin: 7% 0 0 0;
+  padding: 0 1%;
+  p {
+    margin: 0;
+    font-size: 1.7rem;
+    width: 75%;
+  }
+
+  .action-call {
+    font-size: 7.8rem;
+  }
+  
+  .button-group {
+    margin: 7% 0 0 0;
+    
+    button {
+      font-family: inherit;
+      font-size: 1.7rem;
+      font-weight: 300;
+      width: 251px;
+      height: 50px;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border: none;
+    }
+  
+    .work-button {
+      background-color: $primary-color;
+      color: #FFF;
+      transition: .2s;
+    }
+
+    .work-button:hover {
+      width: 300px;
+    }
+
+    .blog-button {
+      background-color: #FFF;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      margin: 0 1.5%;
+      transition: .2s;
+    }
+
+    .blog-button:hover {
+      width: 300px;
+    }
+  }
+}
