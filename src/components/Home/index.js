@@ -6,8 +6,8 @@ let Home = () => (
     <p className="action-call">Hi.</p>
     <p>I'm a software developer passionate about crafting beautiful, responsive and accessible websites, supported by blazzing fast and scalable backends.</p>
     <div className="button-group">
-      <button className="work-button">work</button>
-      <button className="blog-button draw-border">blog</button>
+      <a className="work-button" href="https://github.com/rafapauwels" target="_blank">work</a>
+      <a className="blog-button">blog</a>
     </div>
   </section>
 )

@@ -9,7 +9,7 @@ let Nav = () => (
       </div>
       <div className="navigation">
         <li><a href="/blog">blog</a></li>
-        <li><a href="/work">work</a></li>
+        <li><a href="https://github.com/rafapauwels" target="_blank">work</a></li>
         <li><a href="/about">about</a></li>
         <li><a href="/contact">contact</a></li>
       </div>
