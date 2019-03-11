@@ -1,14 +1,18 @@
 import React from 'react'
-import './index.css'
+import './index.scss'
 
 let Nav = () => (
   <nav>
     <ul>
-      <li><a href="/">Rafael Pauwels</a></li>
-      <li><a href="/blog">blog</a></li>
-      <li><a href="/work">work</a></li>
-      <li><a href="/about">about</a></li>
-      <li><a href="/contact">contact</a></li>
+      <div className="brand">
+        <li><a href="/">Rafael Pauwels</a></li>
+      </div>
+      <div className="navigation">
+        <li><a href="/blog">blog</a></li>
+        <li><a href="/work">work</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/contact">contact</a></li>
+      </div>
     </ul>
   </nav>
 )
