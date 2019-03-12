@@ -4,5 +4,20 @@ $primary-color: #1E1E3A;
 
 .App {
   font-family: 'Montserrat', sans-serif;
-  color: $primary-color; 
+  color: $primary-color;
+  margin: 0 10%; 
+}
+
+@media (max-width: 1440px) //Large laptop
+{
+  .App {
+    margin: 0 5%;
+  } 
+}
+
+@media (max-width: 768px) //Tablet
+{
+  .App {
+    margin: 0;
+  }
 }

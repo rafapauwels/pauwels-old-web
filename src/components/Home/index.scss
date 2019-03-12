@@ -33,6 +33,7 @@ section {
   
     .work-button {
       background-color: $primary-color;
+      border: 1px solid $primary-color;
       color: #FFF;
       transition: .2s;
     }
@@ -51,6 +52,51 @@ section {
 
     .blog-button:hover {
       width: 300px;
+    }
+  }
+}
+
+@media (max-width: 768px) // Tablet
+{
+  section {
+    margin: 15% 0 0 0;
+    
+    .button-group {
+      margin: 15% 0 0 0;
+
+      .blog-button {
+        margin: 0 4.5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) // Mobile L
+{
+  section {
+    p {
+      width: 100%;
+    }
+
+    .button-group {
+      margin: 30% 0 0 0;
+
+      .work-button {
+        width: 100%;
+      }
+
+      .blog-button {
+        width: 100%;
+        margin: 5% 0;
+      }
+
+      .work-button::hover {
+        width: 100%;
+      }
+
+      .blog-button:hover {
+        width: 100%;
+      }
     }
   }
 }
