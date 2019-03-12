@@ -1,17 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './index.scss'
 
 let Nav = () => (
   <nav>
     <ul>
       <div className="brand">
-        <li><a href="/">Rafael Pauwels</a></li>
+        <li><Link to="/">Rafael Pauwels</Link></li>
       </div>
       <div className="navigation">
-        <li><a href="/blog">blog</a></li>
+        <li><Link to="/blog">blog</Link></li>
         <li><a href="https://github.com/rafapauwels" target="_blank" rel="noopener noreferrer">work</a></li>
-        <li><a href="/about">about</a></li>
-        <li><a href="/contact">contact</a></li>
+        <li><Link to="/about">about</Link></li>
+        <li><Link to="/contact">contact</Link></li>
       </div>
     </ul>
   </nav>

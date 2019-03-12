@@ -1,8 +1,8 @@
 import React from 'react'
 import './index.scss'
 
-let About = () => (
-  <div className="about-page">
+let Contact = () => (
+  <div className="contact-page">
     <section>
       <h1>I'm currently in Brazil</h1>
       <h2>But don't be shy about the timezone, I'm always up.</h2>
@@ -14,4 +14,4 @@ let About = () => (
   </div>
 )
 
-export default About
+export default Contact

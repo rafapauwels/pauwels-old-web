@@ -1,18 +1,25 @@
 import React, { Component } from 'react'
 import './App.scss'
 
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+
 import Nav from './components/Nav'
 import Home from './components/Home'
-import About from './components/About'
+import Contact from './components/Contact'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Nav />
-        {/* <Home /> */}
-        <About />
-      </div>
+      <Router>
+        <div className="App">
+          <Nav />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/contact" component={Contact} />
+
+          {/* <Home /> */}
+          {/* <About /> */}
+        </div>
+      </Router>
     )
   }
 }
