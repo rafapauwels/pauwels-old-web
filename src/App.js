@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.scss'
 
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Nav from './components/Nav'
 import Home from './components/Home'
@@ -15,9 +15,6 @@ class App extends Component {
           <Nav />
           <Route exact path="/" component={Home} />
           <Route exact path="/contact" component={Contact} />
-
-          {/* <Home /> */}
-          {/* <About /> */}
         </div>
       </Router>
     )
