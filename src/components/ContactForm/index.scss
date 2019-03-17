@@ -1,52 +1,63 @@
 $primary-color: #080813;
 
 .contact-form {
-  margin: 25% 0;
+  margin-top: 5%;
+  width: 75%;
 
-  label {
+  form {
     display: flex;
     flex-flow: column;
-    font-size: 1.5rem;
-
-    .name-input {
-      margin: 3% 0 0 0;
-      background: $primary-color;
-      font-size: 1.7rem;
-
-      caret-color: white;
-      font-family: 'Montserrat', sans-serif;
-      color: white;
-      outline: none;
+    
+    label, input, textarea {
+      font-family: inherit;    
+      display: block;
       border: none;
-      border-bottom: 1px solid white;
-      text-indent: 1%;
+      font-size: 1.2rem;
+      width: 50%;
+      outline: none;
+    }
+
+    input, textarea {
+      font-size: 1rem;
+    }
+    
+    input {
+      margin: 1% 0 3% 0;
+      border-bottom: 1px dashed $primary-color;
+    }
+
+    textarea {
+      border: 1px dashed $primary-color;
+      resize: none;
+      width: 100%;
+      height: calc(1.2rem * 6);
+      margin: 2% 0 8% 0;
+    }
+
+    button {
+      display: inline-block;
+      font-family: inherit;
+      font-size: 1.7rem;
+      text-align: center;
+      line-height: 50px;
+
+      width: 251px;
+      height: 50px;
+      cursor: pointer;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      background-color: $primary-color;
+      border: 1px solid $primary-color;
+      color: #FFF;
+      transition: .2s;
+    }
+
+    button:hover {
+      width: 300px;
     }
 
   }
-
-  .how-call {
-    font-weight: 600;
-  }
-  
-  .about-what {
-    font-weight: 600;
-    margin: 10% 0 3% 0;
-  }
-
-  button {
-    font-size: 1.7rem;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFF;
-    margin: 15% 0 0 0;
-    width: 164px;
-    min-height: 50px;
-    color: $primary-color;
-    border: 1px solid $primary-color;
-  }
-  
-  p {
-    position: fixed;
-    bottom: 3%;
-    font-size: 1rem;
+  footer {
+    margin-top: 18px;
   }
 }
