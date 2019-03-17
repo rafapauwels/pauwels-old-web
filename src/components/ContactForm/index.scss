@@ -1,0 +1,52 @@
+$primary-color: #080813;
+
+.contact-form {
+  margin: 25% 0;
+
+  label {
+    display: flex;
+    flex-flow: column;
+    font-size: 1.5rem;
+
+    .name-input {
+      margin: 3% 0 0 0;
+      background: $primary-color;
+      font-size: 1.7rem;
+
+      caret-color: white;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid white;
+      text-indent: 1%;
+    }
+
+  }
+
+  .how-call {
+    font-weight: 600;
+  }
+  
+  .about-what {
+    font-weight: 600;
+    margin: 10% 0 3% 0;
+  }
+
+  button {
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF;
+    margin: 15% 0 0 0;
+    width: 164px;
+    min-height: 50px;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+  
+  p {
+    position: fixed;
+    bottom: 3%;
+    font-size: 1rem;
+  }
+}

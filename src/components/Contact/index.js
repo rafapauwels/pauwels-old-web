@@ -1,6 +1,8 @@
 import React from 'react'
 import './index.scss'
 
+import ContactForm from '../ContactForm'
+
 let Contact = () => (
   <div className="contact-page">
     <section className="im-here">
@@ -11,6 +13,7 @@ let Contact = () => (
       <div className="whole-form">
         <h1>Let's talk</h1>
         <h2>Share your thoughts with me</h2>
+        <ContactForm />
       </div>
     </section>
   </div>
