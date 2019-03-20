@@ -6,19 +6,38 @@ export default class ContactForm extends Component {
   state = {name: '', email: '', subject: '', message: ''}
   
   render() {      
-    const handleNameChange = e => { this.setState({ name: e.target.value }) }
-    const handleEmailChange = e => { this.setState({ email: e.target.value }) }
-    const handleSubjectChange = e => { this.setState({ subject: e.target.value }) }
-    const handleMessageChange = e => { this.setState({ message: e.target.value }) }
+    const handleNameChange = e => { 
+      document.getElementById("send-contact-button").innerHTML = "send" 
+      this.setState({ name: e.target.value }) 
+    }
+    const handleEmailChange = e => { 
+      document.getElementById("send-contact-button").innerHTML = "send" 
+      this.setState({ email: e.target.value }) 
+    }
+    const handleSubjectChange = e => { 
+      document.getElementById("send-contact-button").innerHTML = "send"
+      this.setState({ subject: e.target.value }) 
+    }
+    const handleMessageChange = e => {
+      document.getElementById("send-contact-button").innerHTML = "send" 
+      this.setState({ message: e.target.value }) 
+    }
 
     const sendEmail = e => {
       e.preventDefault()
-
+      console.log(JSON.stringify({
+        name: this.state.name,
+        email: this.state.email,
+        subject: this.state.subject,
+        message: this.state.message,
+      }))
       // Change button send to sending and make unclicable
     
       // Make post, if success change 'send' to 'sent' and unclicable unless any stated is altered
       // if fail show red fail and shows the user the user a 'mailto:' button
-      fetch('myHerokuApi/api/contact/', {
+      document.getElementById("send-contact-button").innerHTML = "sending"
+
+      fetch('https://peaceful-citadel-98690.herokuapp.com/api/contact/', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
@@ -30,7 +49,7 @@ export default class ContactForm extends Component {
           subject: this.state.subject,
           message: this.state.message,
         })
-      }).then(response => console.log(response))
+      }).then(document.getElementById("send-contact-button").innerHTML = "sent")
     }
 
     return (
@@ -51,7 +70,7 @@ export default class ContactForm extends Component {
             <label className="message-label"> Message
               <textarea className="message-input" type="text" name="message" value={this.state.message} onChange={handleMessageChange} required/>
             </label>
-            <button type="submit">send</button>
+            <button id="send-contact-button" type="submit">send</button>
           </form>
           <footer>*your email won't be stored or shared in anyway.</footer>
         </div>
