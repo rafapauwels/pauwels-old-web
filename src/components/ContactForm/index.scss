@@ -13,7 +13,7 @@ $primary-color: #080813;
       display: block;
       border: none;
       font-size: 1.2rem;
-      width: 50%;
+      width: 70%;
       outline: none;
     }
 
@@ -23,12 +23,14 @@ $primary-color: #080813;
     
     input {
       margin: 1% 0 3% 0;
+    }
+
+    input, textarea {
       border: 1px dashed $primary-color;
       padding: 5px;
     }
 
     textarea {
-      border: 1px dashed $primary-color;
       resize: none;
       width: 100%;
       height: calc(1.2rem * 6);
@@ -65,5 +67,44 @@ $primary-color: #080813;
   }
   footer {
     margin-top: 18px;
+  }
+}
+
+@media (max-width: 768px) // Tablet
+{
+  .contact-form {
+    margin-top: 10%;
+    form {
+      input, label {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) // Mobile L
+{
+  .contact-form {
+    width: 90%;
+    form {
+      input, label {
+        width: 100%;
+        font-size: 1rem;
+      }
+      label {
+        font-size: 0.8rem;
+      }
+      
+    }
+  }
+}
+
+@media (max-width: 320px) // Mobile S
+{
+  .contact-form {
+    width: 98%;
+    form {
+      align-items: center;   
+    }
   }
 }
